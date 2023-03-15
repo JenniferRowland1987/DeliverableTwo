@@ -18,7 +18,7 @@ public class CoinFlip{
 						
 					String answer = scan.next();
 									
-						if(answer.equalsIgnoreCase("yes")) {
+						if(answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
 							//begin loop
 							for(int i=0; i<5; i++) {
 								
@@ -51,15 +51,18 @@ public class CoinFlip{
 										
 										System.out.println("Sorry, not this time.");
 									}
-							
+								
 							} //end loop	
 							
-						}else if(answer.equalsIgnoreCase("no")){
+							System.out.println("Wow, " + playerName + " you have a final score of " + score + "!");
+						
+						
+						}else if(answer.equalsIgnoreCase("no") || answer.equalsIgnoreCase("n")){
 							System.out.println("You're a coward, " + playerName + "!");
 						}
 						
 					
-						System.out.println("Wow, " + playerName + " you have a final score of " + score + "!");
+scan.close();		
 
 	
 	}
